@@ -1,0 +1,56 @@
+.header{
+    background: #FFFCF4;
+    &.fixed{
+        position: sticky;
+        top: -28px;
+        z-index: 1;
+    }
+    & .body{
+        display: flex;
+        align-items: center;
+        padding: 36px 0 8px;
+    }
+
+    .nav{
+        margin-left: auto;
+    }
+    .nav ul{
+        display: flex;
+    }
+    .nav a{  
+        color: #5F5B53;
+        font-size: 1.6rem;
+        padding: 8px 21px;
+        position: relative;
+    }
+    
+    .nav a:hover,
+    .nav li.active a{
+        /* font-weight: 600; */
+        text-shadow: 1px 0 0 currentColor;
+        color: #171100;
+    }
+    
+    .nav li.active a:after{
+        content:"";
+        display: block;
+        width: 12px;
+        height: 2px;
+        background: #171100;
+        border-radius: 1px;
+        position: absolute;
+        left: 21px;
+        bottom: 6px;
+    }
+
+    & .sign-up{
+        min-width:144px;
+     } 
+    & .action{
+         margin-left: 49px;
+     }
+}
+
+
+
+

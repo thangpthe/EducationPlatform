@@ -1,0 +1,67 @@
+.feedback{
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+    .feedback-list{
+        display: flex;
+        overflow: hidden;
+    }
+    .feedback-item{
+        display: flex;
+        flex-shrink: 0;
+        width: 100%;
+        & .avatar{
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        & .info .title{
+            color: #F7F7F7;
+            font-family: var(--heading-font);
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.42;
+            margin-top: 18px;
+            /* width: 130px; */
+        }
+        & .info .desc{
+            margin-top: 4px;
+            color: #BFBCB2;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.85; 
+        } 
+        
+        & .dots{
+            display: flex;
+            margin-top: 28px;
+        }
+        
+        & .dot{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #634700;
+            margin-right: 6px;
+        }
+        & .dot.active{
+            background: #FFB900;
+        }
+        & .content{
+            width: 66%;
+            margin-left: auto;
+        }
+        
+        & blockquote{
+            margin-left: 30px;
+            font-size: italic;
+            font-size: 2.6rem;
+            color: #fff;
+            line-height: 1.54;
+        }
+    }
+    
+        
+}
